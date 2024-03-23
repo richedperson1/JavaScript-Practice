@@ -15,3 +15,10 @@
 fetch("https://randomuser.me/api/")
   .then((res) => res.json())
   .then((res) => console.log(res));
+
+// Event loop in the JS
+// JS has two memory first one is call stack and second is callback queue
+// All running things are present in the call back while async code are in the callback queue
+
+// When all process from the call stack is empty then it take the async code and those
+//! who check continueosly wheather call stack or not is event loops.
